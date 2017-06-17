@@ -6,7 +6,6 @@ function PropertyController( PropertyService ) {
   var vm = this;
 
   vm.getProperties = function() {
-    console.log('getProperties function');
     PropertyService.getProperties();
   }; // end getProperties function
 } // end PropertyController

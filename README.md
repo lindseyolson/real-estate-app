@@ -11,8 +11,8 @@
 [X] write $http request with log
 [X] create new route, check connection with log
 
-[ ] **new branch**
-[ ] downloaded provided data
+[X] **new branch**
+[X] download provided data
 [ ] write queries
 [ ] receive requests
 [ ] display on DOM
