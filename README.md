@@ -6,10 +6,10 @@
 [X] create index.html, add sources and connect to server
 [X] create/connect angular app & controller
 
-[ ] **new branch**
-[ ] create/connect angular services on ng-init
-[ ] write $http request
-[ ] create new route, check connection
+[X] **new branch**
+[X] create/connect angular services on ng-init
+[X] write $http request with log
+[X] create new route, check connection with log
 
 [ ] **new branch**
 [ ] downloaded provided data

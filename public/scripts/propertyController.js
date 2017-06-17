@@ -2,10 +2,11 @@ var app = angular.module ('app', []);
 
 app.controller('PropertyController', PropertyController);
 
-function PropertyController() {
+function PropertyController( PropertyService ) {
   var vm = this;
 
   vm.getProperties = function() {
-    console.log('in getProperties function');
+    console.log('getProperties function');
+    PropertyService.getProperties();
   }; // end getProperties function
 } // end PropertyController
