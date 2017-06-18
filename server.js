@@ -4,6 +4,7 @@ var app = express();
 var bodyParser = require('body-parser');
 var index = require ('./modules/routes/index');
 var properties = require ('./modules/routes/properties');
+var path = require ('path');
 
 // globals
 var port = process.env.PORT || 1616;

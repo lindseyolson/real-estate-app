@@ -1,0 +1,9 @@
+<div class='row' ng-init='pc.getProperties()'>
+  <div class='col-sm-8'>
+    <div class='rentDiv' ng-if='listing.rent' ng-repeat='listing in pc.properties | orderBy: "rent"'>
+      <p><strong>For Rent: {{ listing.rent | currency }}</strong></br>
+        City: {{ listing.city }}</br>
+        {{ listing.sqft }} sq ft.</p>
+    </div>
+  </div>
+</div>

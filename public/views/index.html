@@ -3,15 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>Weekend 5 Challenge: Real Estate Properties</title>
+    <link rel="stylesheet" href="vendors/bootstrap.min.css">
     <link rel="stylesheet" href="styles/main.css">
     <script src="vendors/angular.min.js" charset="utf-8"></script>
+    <script src="vendors/angular-route.min.js" charset="utf-8"></script>
     <script src="scripts/propertyController.js" charset="utf-8"></script>
     <script src="scripts/services/propertyService.js" charset="utf-8"></script>
   </head>
-  <body ng-app='app'>
+  <body class='container' ng-app='app'>
     <h1>Weekend 5 Challenge: Real Estate Properties</h1>
-    <div ng-controller='PropertyController as pc' ng-init='pc.getProperties()'>
-
+    <div>
+      <ul class="nav nav-tabs">
+        <li role="presentation" class="active"><a href='#!/for-sale'>For Sale</a></li>
+        <li role="presentation"><a href='#!/for-rent'>For Rent</a></li>
+        <li role="presentation"><a href='#!/add-property'>Add Property</a></li>
+      </ul>
+      <ng-view></ng-view>
+      </div>
     </div>
   </body>
 </html>
