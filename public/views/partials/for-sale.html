@@ -1,7 +1,7 @@
 <div class='row' ng-init='pc.getProperties()'>
   <div class='col-xs-6 col-sm-8 col-md-8'>
     <div class='saleDiv' ng-if='listing.cost' ng-repeat='listing in pc.properties | orderBy: "cost"'>
-      <p class='rent'><strong>For Sale</strong></p>
+      <p class='rent'><strong>For Sale</strong></p> 
       <p class='price'>{{ listing.cost | currency }}</p>
         <p class='details'></br>
           <strong>City:</strong> {{ listing.city }}</br>
