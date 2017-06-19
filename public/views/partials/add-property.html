@@ -1,1 +1,27 @@
-Add Property
+<div class='addPropertyDiv'>
+<h3>Add a Property</h3>
+<label class="custom-control custom-radio active">
+  <input id="for-sale" name="radio" type="radio" class="custom-control-input" checked="" ng-click='pc.saleRentToggle()'>
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">for sale</span>
+</label></br>
+<label class="custom-control custom-radio">
+  <input id="for-rent" name="radio" type="radio" class="custom-control-input" ng-click='pc.saleRentToggle()'>
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">for rent</span>
+</label>
+<form>
+  <div class="form-group">
+    <label for="inputCost"></label>
+    <input ng-hide='pc.showCost' ng-model='pc.inputCost' type="number" class="form-control" id="inputCost" placeholder="cost">
+    <label for="inputRent"></label>
+    <input ng-show='pc.showCost' ng-model='pc.inputRent' type="number" class="form-control" id="inputRent" placeholder="rent">
+    <label for="inputCity"></label>
+    <input ng-model='pc.inputCity' type="string" class="form-control" id="inputCity" placeholder="city">
+    <label for="inputSqft"></label>
+    <input ng-model='pc.inputSqft' type="number" class="form-control" id="inputSqft" placeholder="square footage">
+    <button id='submitButton' ng-click='pc.newProperty()'>Submit</button>
+  </div>
+</form>
+<p ng-show='pc.showConfirm' class='confirmation'>Your property has been added!</p>
+</div>

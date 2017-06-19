@@ -26,11 +26,30 @@ var listingModel = mongoose.model ('listings', newListing);
 router.get('/', function(req,res){
   console.log('/properties GET route hit');
   listingModel.find().then(function(data){
-  // listingsModel.find().then(function(response){
-    console.log(data);
     res.send(data);
-  }); // end find
+  });
 }); // end get
 
+// POST
+router.post('/', function(req,res){
+  console.log('POST route hit:', req.body);
+  var newRecord = listingModel(req.body);
+  newRecord.save();
+  res.sendStatus(201);
+}); // end post
+
+// DELETE
+router.delete('/:id', function(req,res){
+  console.log('DELETE route hit:', req.params.id);
+  var id = req.params.id;
+  // console.log('ObjectId(id)');
+  listingModel.remove({_id: id}).then(function(){
+    // console.log({_id: ObjectId(id)});
+      res.sendStatus(200);
+    });
+    // .catch(function(err){
+    //     res.sendStatus(500);
+    //   });
+}); // end delete
 
 module.exports = router;

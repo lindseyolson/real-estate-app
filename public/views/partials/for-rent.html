@@ -1,9 +1,13 @@
 <div class='row' ng-init='pc.getProperties()'>
-  <div class='col-sm-8'>
+  <div class='col-xs-6 col-sm-8 col-md-8'>
     <div class='rentDiv' ng-if='listing.rent' ng-repeat='listing in pc.properties | orderBy: "rent"'>
-      <p><strong>For Rent: {{ listing.rent | currency }}</strong></br>
-        City: {{ listing.city }}</br>
-        {{ listing.sqft }} sq ft.</p>
+      <p class='rent'><strong>Rental</strong></p>
+      <p class='price'>{{ listing.rent | currency }}</p>
+        <p class='details'></br>
+          <strong>City:</strong> {{ listing.city }}</br>
+          <strong>Square Footage:</strong> {{ listing.sqft }}</p>
+        <!-- <button ng-click='pc.deleteProperty($index)'>X</button> -->
+
     </div>
   </div>
 </div>
