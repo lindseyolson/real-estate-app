@@ -1,26 +1,12 @@
-### Weekend Challenge 5 - Angular, Mongo, Bootstrap Oh My
-# Lindsey Olson
----
-[X] spin up server
-[X] create directories
-[X] create index.html, add sources and connect to server
-[X] create/connect angular app & controller
+## Real Estate App
 
-[ ] **new branch**
-[ ] create/connect angular services on ng-init
-[ ] write $http request
-[ ] create new route, check connection
+Created Real Estate app, using the MEAN stack.
 
-[ ] **new branch**
-[ ] downloaded provided data
-[ ] write queries
-[ ] receive requests
-[ ] display on DOM
-[ ] use Bootstrap to present the data
----
-## Hard Mode
-[ ] **new branch**
-[ ] create user interface to add additional properties to the database
+- Data is visually divided into two categories: rent and sale.
+- Another view allows the user to add an additional property for rent or sale.
 
-## Pro Mode
-[ ] Host app on Heroku & mLabs
+Technology used: HTML, CSS, Bootstrap, Angular, Node.js, MongoDB
+
+###### 6/19/2017
+
+
